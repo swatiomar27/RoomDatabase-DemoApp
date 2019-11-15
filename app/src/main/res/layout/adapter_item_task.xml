@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/view_grey"
+        app:cardCornerRadius="@dimen/dp5"
+        app:cardElevation="@dimen/dp5"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="@dimen/dp10"
+                android:text="@string/completed"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp5"
+                android:paddingEnd="@dimen/dp5"
+                android:text="@string/title"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp5"
+                android:paddingEnd="@dimen/dp5"
+                android:text="@string/content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp5"
+                android:paddingEnd="@dimen/dp5"
+                android:text="@string/author"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

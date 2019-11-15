@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RoomDemo</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="save">Save</string>
+    <string name="author">Author</string>
+    <string name="update_note">Update Note</string>
+    <string name="description">Description…</string>
+    <string name="mark_as_finished">Mark as finished</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="completed">Completed</string>
+    <string name="enter_title">Enter title</string>
+    <string name="enter_content">Enter content</string>
+    <string name="enter_author">Enter author</string>
+    <string name="saved">Saved</string>
+    <string name="add_note">Add note.</string>
+    <string name="updated">Updated</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/dp10"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title"
+            android:inputType="text"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInput"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInput2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:hint="@string/content"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:singleLine="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInput3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_author"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:hint="@string/author"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:singleLine="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/save"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
