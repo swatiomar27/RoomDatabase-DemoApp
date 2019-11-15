@@ -19,7 +19,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
     private List<Note> mNoteList;
     private INoteItemClickListener mListener;
 
-    MainAdapter(Context context, List<Note> noteList) {
+    public MainAdapter(Context context, List<Note> noteList) {
         mNoteList = noteList;
         mListener = (INoteItemClickListener) context;
     }
@@ -40,7 +40,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         return mNoteList != null ? mNoteList.size() : 0;
     }
 
-    void updateNoteList(int pos) {
+    public void updateNoteList(int pos) {
         mNoteList.remove(pos);
         notifyItemRemoved(pos);
         notifyItemRangeChanged(pos, mNoteList.size());
